@@ -1,0 +1,49 @@
+{
+  "name": "vscode-config-setup",
+  "displayName": "VS Code Config Setup",
+  "publisher": "quynguyen20-07",
+  "description": "Install JetBrains Mono fonts and apply VS Code UI config with one command.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-config.listFonts",
+    "onCommand:vscode-config.installFonts",
+    "onCommand:vscode-config.setup"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-config.listFonts",
+        "title": "VS Code Config: List JetBrains Fonts"
+      },
+      {
+        "command": "vscode-config.installFonts",
+        "title": "VS Code Config: Install Selected JetBrains Mono Fonts"
+      },
+      {
+        "command": "vscode-config.setup",
+        "title": "VS Code Config: Setup VS Code Appearance"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "vscode-config.setup",
+          "when": "true",
+          "group": "navigation"
+        },
+        {
+          "command": "vscode-config.installFonts",
+          "when": "true",
+          "group": "navigation"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "vscode-config-cli",
+  "version": "1.0.0",
+  "description": "CLI helper for vscode-config: install fonts and manage VS Code profiles",
+  "preferGlobal": true,
+  "bin": {
+    "vscode-config": "bin/cli.js"
+  },
+  "scripts": {
+    "install-fonts": "node bin/cli.js install-fonts",
+    "install-global": "node bin/cli.js install-global",
+    "help": "node bin/cli.js --help"
+  },
+  "author": "quynguyen20-07",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "type": "module"
+}

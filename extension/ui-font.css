@@ -1,0 +1,17 @@
+.monaco-workbench {
+    font-family: "JetBrains Mono", sans-serif !important;
+    font-size: 13.5px !important;
+}
+
+.monaco-list-row {
+    border-radius: 6px !important;
+}
+
+.monaco-list-row:not(:hover) .actions {
+    display: none !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab {
+    border-radius: 8px 8px 0 0 !important;
+    border: none !important;
+}

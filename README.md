@@ -49,7 +49,46 @@ Mỗi profile được thiết kế để mang lại:
 
 > Đây là bộ cấu hình dành cho lập trình viên chuyên nghiệp, ưu tiên hiệu quả và trải nghiệm cao cấp.
 
-## 💎 Đẳng cấp thế giới
+## �️ One-command setup
+
+Đã bổ sung CLI `vscode-config` để cài toàn bộ font JetBrains Mono và thiết lập giao diện cho VS Code chỉ bằng một lệnh duy nhất.
+
+### 1. Cài package globally
+
+```bash
+npm install -g .
+```
+
+### 2. Chạy setup toàn bộ
+
+```bash
+vscode-config setup --install-extensions --open
+```
+
+Lệnh này sẽ:
+
+- cài tất cả font JetBrains Mono trong `fonts/ttf`
+- sao chép file CSS `ui-font.css` vào `~/.vscode/vscode-config-ui-font.css`
+- cài các extension hỗ trợ nếu dùng `--install-extensions`
+- mở VS Code nếu dùng `--open`
+
+### Tùy chọn khác
+
+- Liệt kê font:
+
+```bash
+vscode-config list-fonts
+```
+
+- Cài riêng variant muốn dùng:
+
+```bash
+vscode-config install-fonts --fonts "Regular, Bold, Italic"
+```
+
+> Lưu ý: cài tự động hiện hỗ trợ tốt trên Linux và macOS. Windows sẽ cần copy file font thủ công vào `C:\Windows\Fonts`.
+
+## �💎 Đẳng cấp thế giới
 
 `vscode-config` không chỉ là một bộ profile đơn thuần — nó là bản thiết kế phong cách làm việc hiện đại cho coder muốn nâng tầm môi trường phát triển.
 
