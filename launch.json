@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "▶ FE: Dev",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn dev",
+      "cwd": "${workspaceFolder}/polaris-frontend-v2"
+    },
+    {
+      "name": "▶ BE: Dev",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn dev",
+      "cwd": "${workspaceFolder}/polaris-backend-v2"
+    },
+    {
+      "name": "▶ FE: Dev (HTTPS)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn dev --experimental-https -p 443",
+      "cwd": "${workspaceFolder}/polaris-frontend-v2"
+    },
+    {
+      "name": "⚡ FE: Test",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "NODE_OPTIONS=--max_old_space_size=4096 yarn test --runInBand",
+      "cwd": "${workspaceFolder}/polaris-frontend-v2"
+    },
+    {
+      "name": "⚡ BE: Test",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "NODE_OPTIONS=--max_old_space_size=4096 yarn test --runInBand",
+      "cwd": "${workspaceFolder}/polaris-backend-v2"
+    },
+    {
+      "name": "🐛 FE: Debug",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn dev",
+      "cwd": "${workspaceFolder}/polaris-frontend-v2"
+    },
+    {
+      "name": "🐛 BE: Debug",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn dev",
+      "cwd": "${workspaceFolder}/polaris-backend-v2"
+    }
+  ]
+}
